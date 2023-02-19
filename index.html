@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="fontawesome" href="">
-    <title>Virgo Electronics</title>
+    <script src="https://kit.fontawesome.com/d211e9f474.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/output.css">    <title>Virgo Electronics</title>
+   
 </head>
 <body>
 
-    <div class="top-banner">
+    <!-- <div class="top-banner">
         <div class="container banner-text">
         <div class="small-bold-text">Virgo Gives you personalized service</div>
     </div>
-</div>
+</div> -->
 
-    <nav>
+    <navbar>
         <div class="container main-nav flex">
               <a href="#" class="company-logo">
-                <img src="images/t.webp" alt="company-logo">
+                <img src="images/logo.png" alt="company-logo">
               </a>
               <div class="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Home</a></li>
-                    <li><a href="#" class="hover-link">Product</a></li>
+                    <li><a href="#catalogue-section" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Blog</a></li>
                     <li><a href="#" class="hover-link">About Us</a></li>
                     <li><a href="#" class="hover-link">Contact Us</a></li>
                     <li><a href="#" class="hover-link">Support</a></li>
+                   
                 </ul>
               </div>
 
-
-
         </div>
-    </nav>
+    </navbar>
 
     <header>
-        <div class="container header-section flex">
+        <div class="container header-section flex ">
             <div class="header-left">
                 <h1>Virgo Electronics</h1>
                 <p>VIRGO fans - cool without compromise.</p>
@@ -53,16 +54,85 @@
     <section class="product-section">
         <div class="container">
                <div class="product-header">
-                   <h2 class="product-heading-text">Virgo Products</h2>
-                   <a href="#" class="secondary-button">See all products <i class="fa-solid fa-right-long"></i></a>
+                   <!-- <h2 class="product-heading-text">Virgo Products</h2> -->
+                   <a href="#catalogue-section" class="secondary-button">See all products <i class="fa-solid fa-right-long"></i></a>
                </div>
         </div>
     </section>
 
-    <section class="catalog-section">
-        <div class="container">
-
-        </div>
+    <section id="catalogue-section">
+        <h1>Our Products</h1>
+        <section class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+            
+            <!--   ✅ Product card 1 - Starts Here 👇 -->
+            <div class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+              <a href="#">
+                <img src="images/png/ceiling-fan.png" />
+                <div class="productt px-4 py-3 w-72 ">
+                  <span class="text-gray-400 mr-3 uppercase text-xs">Virgo</span>
+                  <p class="text-lg font-bold text-black truncate block capitalize">Ceiling Fan</p>
+                 
+                </div>
+              </a>
+            </div>
+            <!--   🛑 Product card 1 - Ends Here  -->
+          
+            <!--   ✅ Product card 2 - Starts Here 👇 -->
+            <div class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+              <a href="#">
+                <img src="images/png/fan.png" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Virgo</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Pedestial Fan</p>
+                   
+                  </div>
+                </a>
+              </div>
+            <!--   🛑 Product card 2- Ends Here  -->
+          
+            <!--   ✅ Product card 3 - Starts Here 👇 -->
+            <div class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+              <a href="#">
+                <img src="images/png/cooler.png" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Virgo</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Cooler</p>
+                   
+                  </div>
+                </a>
+              </div>
+            <!--   🛑 Product card 3 - Ends Here  -->
+          
+            <!--   ✅ Product card 4 - Starts Here 👇 -->
+            <div class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+              <a href="#">
+                <img src="images/png/room-heater.png" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Virgo</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Room Heater</p>
+                   
+                  </div>
+                </a>
+              </div>
+            <!--   🛑 Product card 4 - Ends Here  -->
+          
+            <!--   ✅ Product card 5 - Starts Here 👇 -->
+            <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Virgo</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Ceiling Fan</p>
+                   
+                  </div>
+                </a>
+              </div>
+            <!--   🛑 Product card 5 - Ends Here  -->
+          
+          
+          
+          </section>
+          
     </section>
 
     <section class="blog-section">
@@ -74,7 +144,6 @@
     <footer></footer>
 
   <div class="spacer" style="height: 100vh"></div>
-
-    <script src="https://kit.fontawesome.com/d211e9f474.js" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

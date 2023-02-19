@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
+/* html{
+    font-size: 62.5%;} */
 *{
     margin: 0;
     padding: 0;
@@ -12,14 +16,18 @@
     --accent-color:#2294ed;
     --accent-color-dark:#1d69a3;
     --padding-inline-section: 20px;
+    --logo-color: #FF5F5F;
 }
 
 body{
     font-family: 'Poppins',sans-serif;
     color: var(--primary-text-color);
-    background-color: #dcf4f2db;
+    /* background-color: #dcf4f2db; */
     /* background-image: url('./image/premium_photo-1668473367234-fe8a1decd456.avif'); */
-       
+    background-image: url('../images/magicpattern-mesh-gradient-1676784066487.png');
+    background-size: cover;
+
+
 }
 
 h1{
@@ -65,14 +73,37 @@ padding-inline:var(--padding-inline-section) ;
     align-items: center;
 }
 
-.hover-link{
+/* .hover-link{
     color: var(--primary-text-color);
 }
 
 .hover-link:hover{
     color: var(--accent-color);
     transition: 0.2s ease-out;
-}
+} */
+.hover-link {
+    display: inline-block;
+    position: relative;
+    color:var(--primary-text-color);
+  }
+ 
+  .hover-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#FF5F5F;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .top-banner{
     background-color: #4fb3d4;
@@ -87,23 +118,27 @@ padding-inline:var(--padding-inline-section) ;
 }
 
 .main-nav{
-    margin-top: 20px;
+    margin-top: 0;
     justify-content: space-between;
-
+    position: relative;
+    overflow: hidden;
 }
-
-.company-logo img{
-    width: 200px;
-}
-
 .nav-links{
     flex-basis: 700px;
 }
+
 
 .nav-links ul{
     justify-content: end;
     gap: 40px;
 }
+
+.company-logo img{
+    width: 12rem;
+    margin-left: 10%;
+}
+
+
 
 .secondary-button{
           border: 0.5px solid var(--secodary-text-color);
@@ -135,9 +170,13 @@ header{
 
 .header-left{
     max-width: 40vw;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 .header-left h1{
     margin-top:20px ;
+    font-size: 3.5rem;
+    
 }
 
 
@@ -152,4 +191,13 @@ header{
 
 .product-heading-text{
     margin-bottom: 20px
+}
+
+#catalogue-section h1{
+    margin-top: 5%;
+    color:var(--logo-color);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    
 }
