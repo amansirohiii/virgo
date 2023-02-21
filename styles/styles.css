@@ -17,8 +17,8 @@ body{
     color: var(--primary-text-color);
     /* background-color: #EEE8E9; */
     /* background-image: url('./image/premium_photo-1668473367234-fe8a1decd456.avif'); */
-    background-image: url('../images/magicpattern-mesh-gradient-1676784066487.png');
-    background-size: cover;
+    /* background-image: url('../images/magicpattern-mesh-gradient-1676784066487.png');
+    background-size: cover; */
 }
 .navcolor{
     background-color: #EEE8E9;
@@ -26,20 +26,24 @@ body{
 .navred{
     color: #FF5F5F;
 }
-/* .photofan{
-    background-image: url('../images/png/Bg.png');
+.photofan{
+    background-image: url('/images/Bgraw.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     width: 100%;
-    height: auto;
-    background-size: cover;
    
-} */
-.hover-link {
+}
+a {
+  color: inherit;
+}
+ .hover-linkk {
     display: inline-block;
     position: relative;
     color:var(--primary-text-color);
   }
  
-  .hover-link:after {
+  .hover-linkk:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -52,7 +56,7 @@ body{
     transition: transform 0.25s ease-out;
   }
   
-  .hover-link:hover:after {
+  .hover-linkk:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
