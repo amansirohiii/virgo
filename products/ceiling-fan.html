@@ -1,59 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/styles.css" />
-        <script
-            src="https://kit.fontawesome.com/d211e9f474.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" href="../styles/output.css" />
-        <title>Virgo Electronics</title>
-    </head>
-    <body>
-        <navbar>
-            <div class="sticky top-0 container main-nav flex">
-                <a href="#" class="company-logo">
-                    <img src="images/logo.png" alt="company-logo" />
-                </a>
-                <div class="nav-links">
-                    <ul class="flex">
-                        <li>
-                            <a href="index.html" class="hover-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="index.html#catalogue-section" class="hover-link"
-                                >Products</a
-                            >
-                        </li>
-                        <li><a href="#" class="hover-link">Blog</a></li>
-                        <li>
-                            <a href="about-us.html" class="hover-link"
-                                >About Us</a
-                            >
-                        </li>
-                        <li><a href="#" class="hover-link">Contact Us</a></li>
-                        <li><a href="#" class="hover-link">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-        </navbar>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/d211e9f474.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="styles/output.css">   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Virgo Electronics</title>
+   
+</head>
+<body>
+        <header>
+            <nav class="navcolor relative px-4 py-4 flex justify-between items-center ">
+                  <a class="text-3xl font-bold leading-none" href="index.html">
+              <img src="/images/logo.png" class="h-10" alt="logo" viewBox="0 0 100 100">		
+                  </a>
+                  <div class="lg:hidden">
+                      <button class="navbar-burger flex items-center navred p-3">
+                          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <title>Mobile menu</title>
+                              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                          </svg>
+                      </button>
+                  </div>
+                  <ul class="hidden justify-between absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                      <li><a class="hover-link text-sm text-black hover:text-gray-500" href="index.html">Home</a></li>
+                      <li class="text-black">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                          </svg>
+                      </li>
+                      <li><a class="hover-link text-sm text-red-400 font-bold" href="#catalogue-section">Products</a></li>
+                      <li class="text-black">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                          </svg>
+                      </li>
+                      <li><a class="hover-link text-sm text-black hover:text-gray-500" href="about-us.html">About Us</a></li>
+                      <li class="text-black">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                          </svg>
+                      </li>
+                      <li><a class="hover-link text-sm text-black hover:text-gray-500" href="#">Blogs</a></li>
+                      <li class="text-black">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                          </svg>
+                      </li>
+                      <li><a class="hover-link text-sm text-black hover:text-gray-500" href="contact-us.html">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <div class="navbar-menu relative z-50 hidden">
+                  <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                  <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                      <div class="flex items-center mb-8">
+                          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                                  <img src="/images/logo.png" class="h-12" alt="logo" viewBox="0 0 100 100"/>		
+          
+                          </a>
+                          <button class="navbar-close">
+                              <svg class="h-6 w-6 text-black cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                              </svg>
+                          </button>
+                      </div>
+                      <div>
+                          <ul>
+                              <li class="mb-1">
+                                  <a class=" block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+                              </li>
+                              <li class="mb-1">
+                                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#catalogue-section">Products</a>
+                              </li>
+                              <li class="mb-1">
+                                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="about-us.html">About Us</a>
+                              </li>
+                              <li class="mb-1">
+                                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Blogs</a>
+                              </li>
+                              <li class="mb-1">
+                                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact-us.html">Contact Us</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="mt-auto">
+                          
+                          <p class="my-4 text-xs text-center text-black">
+                              <span>Copyright © 2021</span>
+                          </p>
+                      </div>
+                  </nav>
+              </div>
+           </header>
         <section class="ceiling-fan">
-            <h1>Ceiling Fans</h1>
+           
             <section
                 class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
             >
                 <div
-                    class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                    class="bg-red-100 w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                 >
                     <a href="ceiling-fan.html">
-                        <img src="images/ceilingfan1.png" class="h-80 w-72 object-none rounded-t-xl"/>
+                        <img src="/images/ceilingfan1.png" class="h-80 w-72  rounded-t-xl"/>
                         <div class="px-4 py-3 w-72">
                             <span class=" text-gray-400 mr-3 uppercase text-xs"
                                 >Virgo</span
@@ -68,10 +123,10 @@
                 </div>
 
                 <div
-                    class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                    class="bg-red-100 w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                 >
                     <a href="ceiling-fan.html">
-                        <img src="images/ceilingfan2.png" class="h-80 w-72 object-none rounded-t-xl"/>
+                        <img src="/images/ceilingfan2.png" class="h-80 w-72 object-scale-down rounded-t-xl"/>
                         <div class="px-4 py-3 w-72">
                             <span class="text-gray-400 mr-3 uppercase text-xs"
                                 >Virgo</span
@@ -85,10 +140,10 @@
                     </a>
                 </div>
                 <div
-                    class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                    class="bg-red-100 w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                 >
                     <a href="ceiling-fan.html">
-                        <img src="images/ceilingfan3.png" class="h-80 w-72 object-none rounded-t-xl"/>
+                        <img src="/images/ceilingfan3.png" class="h-80 w-72  rounded-t-xl"/>
                         <div class="px-4 py-3 w-72">
                             <span class="text-gray-400 mr-3 uppercase text-xs"
                                 >Virgo</span
@@ -102,10 +157,10 @@
                     </a>
                 </div>
                 <div
-                    class="w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                    class="bg-red-100 w-72 shadow-2xl rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                 >
                     <a href="ceiling-fan.html">
-                        <img src="images/ceilingfan4.png" class="h-80 w-72 object-none rounded-t-xl"/>
+                        <img src="/images/ceilingfan4.png" class="h-80 w-72  rounded-t-xl"/>
                         <div class="px-4 py-3 w-72">
                             <span class="text-gray-400 mr-3 uppercase text-xs"
                                 >Virgo</span
@@ -120,5 +175,7 @@
                 </div>
             </section>
         </section>
+      
+        
     </body>
 </html>
