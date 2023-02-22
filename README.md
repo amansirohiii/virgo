@@ -3,7 +3,7 @@
   <body>
     <h1>Virgo</h1>
     <p>
-      This is a responsive web application named Virgo, which is an online platform for selling electric appliances such as refrigerators, air conditioners, washing machines, and other similar devices. This website is created using HTML, CSS, JavaScript, PHP, and Tailwind CSS. It is a user-friendly website that allows the users to browse through a wide range of electric appliances available on the website and purchase them with just a few clicks.
+      This is a responsive web application named Virgo, which is an online platform for selling electric appliances such as Ceiling Fans, Pedestal Fans, Coolers and other similar devices. This website is created using HTML, CSS, JavaScript, PHP, and Tailwind CSS. It is a user-friendly website that allows the users to browse through a wide range of electric appliances available on the website.
     </p>
     <h2>Getting Started</h2>
     <p>
@@ -32,10 +32,7 @@
     <ul>
       <li>The website has a responsive design that can adjust to different screen sizes.</li>
       <li>It has a user-friendly interface that makes it easy for users to navigate through the website and find what they are looking for.</li>
-      <li>Users can browse through a wide range of electric appliances available on the website and purchase them with just a few clicks.</li>
-      <li>The website has a search feature that allows users to search for specific products.</li>
-      <li>It has a cart feature that allows users to add products to their cart and checkout.</li>
-      <li>The website has a login and registration feature that allows users to create an account and manage their orders.</li>
+      <li>Users can browse through a wide range of electric appliances available on the website.</li>
     </ul>
     <h2>Contributing</h2>
     <p>
