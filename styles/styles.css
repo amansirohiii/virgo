@@ -13,9 +13,9 @@
     --logo-color: #FF5F5F;
 }
 body{
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins',sans-serif; 
     color: var(--primary-text-color);
-    /* background-color: #EEE8E9; */
+    /* background-color: #000; */
     /* background-image: url('./image/premium_photo-1668473367234-fe8a1decd456.avif'); */
     /* background-image: url('../images/magicpattern-mesh-gradient-1676784066487.png');
     background-size: cover; */
@@ -26,14 +26,21 @@ body{
 .navred{
     color: #FF5F5F;
 }
-.photofan{
-    background-image: url('/images/Bgraw.png');
-    height: 80vh;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    width: 100%;
-   
+.hero{
+  position: relative;
+  color: white;
 }
+.bg_img{
+   filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    z-index: -100;
+    width: 100%;
+    max-height: 500;
+    object-fit: cover;
+
+}
+
 a {
   color: inherit;
 }
@@ -60,13 +67,13 @@ a {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .product-header{
+  /* .product-header{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-  }
-.secondary-button{
+  } */
+/* .secondary-button{
     border: 0.5px solid var(--secodary-text-color);
     border-radius: 6px;
     font-weight: 700;
@@ -78,7 +85,7 @@ a {
 .secondary-button:hover{
 border-color: var(--accent-color);
 color: var(--accent-color) !important;
-}
+} */
 /* .ourproduct-header{
     margin-top: 10%;
 } */
